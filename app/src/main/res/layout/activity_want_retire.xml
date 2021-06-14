@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#011d5e"
+    tools:context=".want_to_retire">
+
+    <ImageView
+        android:id="@+id/鉛筆和表格_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/pencil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="517dp"/>
+
+    <View
+        android:id="@+id/rectangle_large"
+        android:layout_width="300dp"
+        android:layout_height="900dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/my_rectangle_f0f5f4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--
+    <ImageView
+        android:id="@+id/返回鍵_image"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="356dp"
+        android:layout_marginBottom="548dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/go_back_white"
+        tools:ignore="MissingConstraints" />
+-->
+    <TextView
+        android:id="@+id/標題_text"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="退休計畫通"
+        android:textColor="#f0f5f4"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="525dp"
+        android:layout_marginEnd="85dp" />
+
+    <View
+        android:id="@+id/rectangle_small_1"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/my_rectangle_d1dbd9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="說說你的退休計畫"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_small_1"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_small_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_small_1"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_small_1" />
+
+    <EditText
+        android:id="@+id/input_form_1"
+        tools:ignore="MissingConstraints"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:maxLength="2"
+        android:hint="目前年齡"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_small_1" />
+
+    <EditText
+        android:id="@+id/input_form_2"
+        tools:ignore="MissingConstraints"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:maxLength="3"
+        android:hint="預計幾歲退休"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/input_form_1" />
+
+    <Spinner
+        android:id="@+id/spinner_1"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/input_form_2" />
+
+    <EditText
+        android:id="@+id/input_form_3"
+        tools:ignore="MissingConstraints"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:hint="退休生活每月平均花費"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_1" />
+
+    <View
+        android:id="@+id/rectangle_small_2"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="335dp"
+        android:background="@drawable/my_rectangle_d1dbd9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_2"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="你打算怎麼做呢？"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_small_2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_small_2"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_small_2"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_small_2" />
+
+    <EditText
+        android:id="@+id/input_form_4"
+        tools:ignore="MissingConstraints"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:hint="目前已準備的退休金"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_small_2" />
+
+    <EditText
+        android:id="@+id/input_form_5"
+        tools:ignore="MissingConstraints"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:hint="預計每月投資金額"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_form_4" />
+
+    <Spinner
+        android:id="@+id/spinner_2"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_form_5"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="37dp" />
+
+    <EditText
+        android:id="@+id/input_form_6"
+        tools:ignore="MissingConstraints"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:hint="預期報酬率 (%)"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_2" />
+
+    <View
+        android:id="@+id/rectangle_small_3"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/my_rectangle_ffffff"
+        android:fadingEdge="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="看看可以怎麼進行→"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_small_3"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_small_3"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_small_3"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_small_3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

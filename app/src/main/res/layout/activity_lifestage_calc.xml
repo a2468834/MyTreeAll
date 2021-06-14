@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#def8ff"
+    tools:context=".lifestage_calc">
+
+    <ImageView
+        android:id="@+id/花園_image"
+        app:srcCompat="@drawable/garden"
+        tools:ignore="MissingConstraints"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/雲朵_medium_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/cloud_computing"
+        tools:ignore="MissingConstraints"
+        android:layout_marginEnd="255dp"
+        android:layout_marginBottom="415dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/雲朵_large_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/cloud_computing"
+        tools:ignore="MissingConstraints"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="443dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/雲朵_small_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/cloud_computing"
+        tools:ignore="MissingConstraints"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="368dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/太陽_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/sun"
+        tools:ignore="MissingConstraints"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="492dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+<!--
+        <ImageView
+            android:id="@+id/返回鍵_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            app:srcCompat="?attr/homeAsUpIndicator"
+            tools:ignore="MissingConstraints"
+            android:layout_marginEnd="351dp"
+            android:layout_marginBottom="542dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+-->
+    <TextView
+        android:id="@+id/夢想清單_text"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="夢想清單"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.749" />
+
+    <ImageView
+        android:id="@+id/夢想清單_image"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        app:srcCompat="@drawable/piggybank"
+        app:layout_constraintBottom_toTopOf="@+id/夢想清單_text"
+        app:layout_constraintStart_toStartOf="@+id/夢想清單_text"
+        app:layout_constraintEnd_toEndOf="@+id/夢想清單_text"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/子女教育_text"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="子女教育"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <ImageView
+        android:id="@+id/子女教育_image"
+        app:srcCompat="@drawable/presentation"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toTopOf="@+id/子女教育_text"
+        app:layout_constraintStart_toStartOf="@+id/子女教育_text"
+        app:layout_constraintEnd_toEndOf="@+id/子女教育_text"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/幸福成家_text"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="幸福成家"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.749" />
+
+    <ImageView
+        android:id="@+id/幸福成家_image"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        app:srcCompat="@drawable/house"
+        app:layout_constraintBottom_toTopOf="@+id/幸福成家_text"
+        app:layout_constraintStart_toStartOf="@+id/幸福成家_text"
+        app:layout_constraintEnd_toEndOf="@+id/幸福成家_text"
+        android:layout_marginBottom="0dp"/>
+
+    <TextView
+        android:id="@+id/幸福退休_text"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="幸福退休"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <ImageView
+        android:id="@+id/幸福退休_image"
+        app:srcCompat="@drawable/checklist"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toTopOf="@+id/幸福退休_text"
+        app:layout_constraintStart_toStartOf="@+id/幸福退休_text"
+        app:layout_constraintEnd_toEndOf="@+id/幸福退休_text"
+        android:layout_marginStart="3dp" />
+
+    <TextView
+        android:id="@+id/理財試算機_text"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="理財試算機"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

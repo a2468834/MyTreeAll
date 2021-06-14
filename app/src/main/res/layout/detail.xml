@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/標題_text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="544dp"
+        android:gravity="center"
+        android:text="8月喜好項目"
+        android:textColor="@color/green"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <ImageView
+        android:id="@+id/good"
+        android:layout_width="51dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="352dp"
+        android:layout_marginBottom="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/thumb_up" />
+
+    <ImageView
+        android:id="@+id/so"
+        android:layout_width="49dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="352dp"
+        android:layout_marginBottom="356dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/sceptic" />
+
+    <ImageView
+        android:id="@+id/bad"
+        android:layout_width="51dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="352dp"
+        android:layout_marginBottom="488dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/poop" />
+
+    <view
+        android:id="@+id/view2"
+        class="com.example.self_built_tree.draw2"
+        android:layout_width="20dp"
+        android:layout_height="520dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="食物：7-11、速食\n娛樂：遊樂園"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/soso"
+        app:layout_constraintStart_toEndOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/soso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="56dp"
+        android:text="食物：學餐\n娛樂：登山\n課程：學業\n其他：房租"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/like"
+        app:layout_constraintStart_toEndOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="104dp"
+        android:text="食物：義式料理\n娛樂：唱歌\n課程：英文\n其他：紅包錢"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view2" />
+
+    <Button
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginBottom="16dp"
+        android:text="查看回顧"
+        android:background="@drawable/buttom_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

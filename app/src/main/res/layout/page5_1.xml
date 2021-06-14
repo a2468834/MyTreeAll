@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page5_1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title5_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="35dp"
+            android:text="重新設定灌溉計畫" />
+
+        <TextView
+            android:id="@+id/autoInputSetting_text"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginVertical="20dp"
+            android:text="藉由重新調整灌溉計畫，可以重新設定每次存入金額，以及開始更變的日期。如果不希望定期定額投入，請將金額設定為0元即可。"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/autoInputSetting_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="重新設定每次存入金額。"
+            android:layout_marginVertical="5dp"
+            android:layout_gravity="center"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/autoInputSetting_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="幾個月存入一次呢?"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/autoInputSetting_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="開始更變日期"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/autoInputSetting_confirm_btn"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/buttom_box"
+            android:text="設定好了!" />
+
+        <ImageView
+            android:id="@+id/farming_5_1"
+            android:layout_width="239dp"
+            android:layout_height="142dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/farming" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

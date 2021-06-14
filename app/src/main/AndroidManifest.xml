@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.self_built_tree">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="KOKO"
+        tools:replace="android:label"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Self_Built_Tree">
+
+        <!--小樹苗成長情形-->
+        <activity
+            android:name=".tree_details"
+            android:label="小樹苗成長情形"/>
+
+        <!--試算小樹苗監控看板-->
+        <activity
+            android:name=".page0"
+            android:label="小樹苗監控板"/>
+
+        <!--修剪小樹苗-->
+        <activity
+            android:name=".page5_3"
+            android:label="灌溉工具箱" />
+
+        <!--替小樹苗施肥-->
+        <activity
+            android:name=".page5_2"
+            android:label="灌溉工具箱" />
+
+        <!--重新設定灌溉計畫-->
+        <activity
+            android:name=".page5_1"
+            android:label="灌溉工具箱" />
+
+        <!--自建小樹苗監控看板-->
+        <activity
+            android:name=".page4"
+            android:label="小樹苗監控板"/>
+
+        <!--定期定額試算結果-->
+        <activity android:name=".page3_2" />
+
+        <!--設定自動澆灌系統-->
+        <activity android:name=".page3_1" />
+
+        <!--是否設定定期定額?-->
+        <activity android:name=".page2"/>
+
+        <!--建立小樹苗資料輸入-->
+        <activity
+            android:name=".page1"
+            android:label="建立小樹苗"/>
+        <!--記帳當月情況(喜好)-->
+        <activity
+            android:name="secondpage"
+            android:label="記帳當月情況(喜好)"/>
+        <!--喜好回顧-->
+        <activity
+            android:name=".review"
+            android:label="喜好回顧"/>
+        <!--記帳當月狀況(類別)-->
+        <activity
+            android:name=".classes"
+            android:label="記帳當月狀況(類別)"/>
+        <!--12個月平均佔比-->
+        <activity
+            android:name=".average"
+            android:label="12個月平均佔比"/>
+        <!--喜愛細節-->
+        <activity
+            android:name=".detail"
+            android:label="喜愛細節"/>
+        <!--優惠推薦-->
+        <activity
+            android:name=".marketing"
+            android:label="優惠推薦"/>
+        <activity
+            android:name=".record"
+            android:label="記帳項目"/>
+
+        <activity
+            android:name=".plant_tree" />
+        <activity
+            android:name=".want_to_retire" />
+        <activity
+            android:name=".preview_building_tree" />
+        <activity
+            android:name=".lifestage_calc" />
+        <activity
+            android:name=".first_one_million" />
+        <activity
+            android:name=".children_education_p2" />
+        <activity
+            android:name=".children_education_p1" />
+        <activity
+            android:name=".buy_house" />
+        <activity
+            android:name=".import_transaction" />
+        <activity
+            android:name=".my_forest" />
+        <activity
+            android:name=".suggest_dn_cathay_app" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="KOKO">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

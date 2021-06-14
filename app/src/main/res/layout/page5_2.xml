@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page5_2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title5_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="35dp"
+            android:text="替小樹苗施肥!" />
+
+        <TextView
+            android:id="@+id/InputSetting_text"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="30dp"
+            android:gravity="center"
+            android:text="透過存入額外金額，可以替小樹苗施肥，加速小樹苗成長，請輸入想要存入的金額。"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/InputSetting_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="單次存入金額。"
+            android:layout_marginVertical="10dp"
+            android:layout_gravity="center"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/InputSetting_confirm_btn"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/buttom_box"
+            android:text="小樹苗快快長大!" />
+
+        <ImageView
+            android:id="@+id/planting5_2"
+            android:layout_width="239dp"
+            android:layout_height="142dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginVertical="10dp"
+            app:srcCompat="@drawable/planting" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c7dfed"
+    tools:context=".preview_building_tree">
+<!--
+    <ImageView
+        android:id="@+id/返回鍵_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        tools:ignore="MissingConstraints"
+        android:layout_marginEnd="351dp"
+        android:layout_marginBottom="542dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+-->
+    <TextView
+        android:id="@+id/標題_text"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="小樹苗試算結果"
+        android:textColor="#011d5e"
+        android:textSize="29dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/子標題_text"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="點擊圓餅圖，看看詳細的投資建議"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/標題_text"
+        app:layout_constraintStart_toStartOf="@+id/標題_text"
+        app:layout_constraintTop_toTopOf="@+id/標題_text" />
+<!--
+    <!- - A placeholder of test logs. - ->
+    <TextView
+        android:id="@+id/test_log_text"
+        android:layout_width="320dp"
+        android:layout_height="145dp"
+        android:gravity="center|left"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+-->
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pie_chart"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="89dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle_small_機會投資"
+        android:layout_width="103dp"
+        android:layout_height="70dp"
+        android:background="@drawable/my_rectangle_a0d0f2"
+        android:fadingEdge="horizontal"
+        android:layout_marginEnd="207dp"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_large_機會投資"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_large_機會投資"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_large_機會投資" />
+
+    <TextView
+        android:id="@+id/機會投資_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="機會投資"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_small_機會投資"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_small_機會投資"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_small_機會投資"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_small_機會投資"/>
+
+    <View
+        android:id="@+id/rectangle_large_機會投資"
+        android:layout_width="310dp"
+        android:layout_height="130dp"
+        android:background="@drawable/my_rectangle_a0d0f2"
+        android:fadingEdge="horizontal"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="167dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/說明_機會投資_text_1"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="把握市場議題和趨勢進行機會投資，獲得資產增值的機會。"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_large_機會投資"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_large_機會投資"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_large_機會投資" />
+
+    <TextView
+        android:id="@+id/說明_機會投資_text_2"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="基金："
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/說明_保值_text_1"
+        app:layout_constraintEnd_toEndOf="@+id/說明_保值_text_1"
+        app:layout_constraintTop_toBottomOf="@+id/說明_保值_text_1" />
+
+    <TextView
+        android:id="@+id/說明_機會投資_text_3"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="瀚亞多重收益優化組合基金\n摩根多重收益基金\n聯博美國收益基金"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="@+id/說明_保值_text_2"
+        app:layout_constraintEnd_toEndOf="@+id/說明_保值_text_2"
+        app:layout_constraintTop_toBottomOf="@+id/說明_保值_text_2" />
+
+    <View
+        android:id="@+id/rectangle_small_現金"
+        android:layout_width="104dp"
+        android:layout_height="70dp"
+        android:background="@drawable/my_rectangle_ebdf83"
+        android:fadingEdge="horizontal"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintStart_toEndOf="@+id/rectangle_small_機會投資"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_large_現金" />
+
+    <TextView
+        android:id="@+id/現金_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="現金"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_small_現金"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_small_現金"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_small_現金"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_small_現金"/>
+
+    <View
+        android:id="@+id/rectangle_large_現金"
+        android:layout_width="310dp"
+        android:layout_height="130dp"
+        android:background="@drawable/my_rectangle_ebdf83"
+        android:fadingEdge="horizontal"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="167dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/說明_現金_text_1"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="緊急預備金建議至少準備六個月收入。 "
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_large_機會投資"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_large_機會投資"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_large_機會投資" />
+
+    <View
+        android:id="@+id/rectangle_small_保值"
+        android:layout_width="103dp"
+        android:layout_height="70dp"
+        android:background="@drawable/my_rectangle_b7ebbc"
+        android:fadingEdge="horizontal"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintStart_toEndOf="@+id/rectangle_small_現金"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_large_保值" />
+
+    <TextView
+        android:id="@+id/保值_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="保值"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_small_保值"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_small_保值"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_small_保值"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_small_保值"/>
+
+    <View
+        android:id="@+id/rectangle_large_保值"
+        android:layout_width="310dp"
+        android:layout_height="130dp"
+        android:background="@drawable/my_rectangle_b7ebbc"
+        android:fadingEdge="horizontal"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="167dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/說明_保值_text_1"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="透過債券降低資金虧損風險，並由保險協助你建立家庭防護網，避免意外造成身心負擔。"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_large_保值"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_large_保值"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_large_保值" />
+
+    <TextView
+        android:id="@+id/說明_保值_text_2"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="債券："
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/說明_保值_text_1"
+        app:layout_constraintEnd_toEndOf="@+id/說明_保值_text_1"
+        app:layout_constraintTop_toBottomOf="@+id/說明_保值_text_1" />
+
+    <TextView
+        android:id="@+id/說明_保值_text_3"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="00330534-加拿大皇家銀行美元公司債券(二)\n00330580-高盛集團美元公司債券(二)\n00330504-花旗集團美元公司債券(五)"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="@+id/說明_保值_text_2"
+        app:layout_constraintEnd_toEndOf="@+id/說明_保值_text_2"
+        app:layout_constraintTop_toBottomOf="@+id/說明_保值_text_2" />
+
+    <TextView
+        android:id="@+id/說明文字_1_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="(1) 你將依據以上試算結果種下小樹苗。"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintEnd_toEndOf="@+id/說明文字_2_text"
+        app:layout_constraintStart_toStartOf="@+id/說明文字_2_text"
+        app:layout_constraintBottom_toTopOf="@+id/說明文字_2_text" />
+
+    <TextView
+        android:id="@+id/說明文字_2_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="(2) 如果你想要更改每月投入的金額與投入週期，仍可在種下小樹苗後做更動。"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintEnd_toEndOf="@+id/說明文字_3_text"
+        app:layout_constraintStart_toStartOf="@+id/說明文字_3_text"
+        app:layout_constraintBottom_toTopOf="@+id/說明文字_3_text" />
+
+    <TextView
+        android:id="@+id/說明文字_3_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="(3) 系統將自動推荐投資產品，其購買連結在「灌溉工具箱」當中找的到歐！"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/稻草堆_image" />
+
+    <ImageView
+        android:id="@+id/稻草堆_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/haystack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="0dp" />
+
+    <View
+        android:id="@+id/rectangle_small"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/my_rectangle_ffffff"
+        android:fadingEdge="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/稻草堆_image"
+        app:layout_constraintTop_toTopOf="@+id/稻草堆_image"
+        app:layout_constraintBottom_toBottomOf="@+id/稻草堆_image" />
+
+    <TextView
+        android:id="@+id/text_3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="種下小樹苗→"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_small"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_small"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_small"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_small" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
