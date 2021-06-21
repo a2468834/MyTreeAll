@@ -13,11 +13,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-/*import com.github.mikephil.charting.charts.PieChart;
+import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
-import com.github.mikephil.charting.data.PieEntry;*/
+import com.github.mikephil.charting.data.PieEntry;
 
 import java.util.ArrayList;
 
@@ -180,7 +180,7 @@ public class preview_building_tree extends AppCompatActivity {
     }
 
     private void drawPieChart(){
-        /*PieChart pie_chart_view;
+        PieChart pie_chart_view;
         pie_chart_view = findViewById(R.id.pie_chart);
 
         ArrayList<PieEntry> pie_chart_entries = new ArrayList<>();
@@ -214,8 +214,9 @@ public class preview_building_tree extends AppCompatActivity {
         pie_chart_view.setEntryLabelColor(Color.BLACK);
         pie_chart_view.setEntryLabelTextSize(14f);
         pie_chart_view.setExtraTopOffset(6f);
-        pie_chart_view.setExtraBottomOffset(4f);*/
+        pie_chart_view.setExtraBottomOffset(4f);
     }
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         startActivity(new Intent(preview_building_tree.this,lifestage_calc.class));

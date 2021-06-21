@@ -25,16 +25,16 @@ public class lifestage_calc extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-
-//        go_back_button = (ImageView) findViewById(R.id.返回鍵_image);
-//        go_back_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(lifestage_calc.this, my_forest.class);
-//                startActivity(intent);
-//            }
-//        });
-
+/*
+        go_back_button = (ImageView) findViewById(R.id.返回鍵_image);
+        go_back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(lifestage_calc.this, my_forest.class);
+                startActivity(intent);
+            }
+        });
+*/
         want_retire_button = (ImageView) findViewById(R.id.幸福退休_image);
         want_retire_button.setOnClickListener(new View.OnClickListener() {
             @Override
